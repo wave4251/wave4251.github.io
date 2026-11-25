@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>且将新火试新茶，诗酒趁年华｜武川</title>
+  <meta name="description" content="武川的个人空间。这里放着一些做过的事、走过的路，以及还没来得及实现的念头。" />
+  <meta name="theme-color" content="#f7f6f2" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ============ 顶部导航（胶囊悬浮） ============ -->
+  <header class="site-header">
+    <div class="header-shell">
+      <a href="#home" class="brand">
+        <span class="brand-dot"></span>
+        武川 · WU CHUAN
+      </a>
+      <div class="nav-links">
+        <a href="#me">从这里出发</a>
+        <a href="#works">把想法做出来</a>
+        <a href="#practice">与人同行</a>
+        <a href="#places">去看看世界</a>
+        <a href="#now">此刻与以后</a>
+        <a href="#contact">有缘相逢</a>
+      </div>
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="nav-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-drawer" id="nav-drawer">
+    <button class="nav-drawer-close" aria-label="关闭菜单">✕</button>
+    <a href="#home"><span class="drawer-num">00</span>首页</a>
+    <a href="#me"><span class="drawer-num">01</span>从这里出发</a>
+    <a href="#works"><span class="drawer-num">02</span>把想法做出来</a>
+    <a href="#practice"><span class="drawer-num">03</span>与人同行</a>
+    <a href="#places"><span class="drawer-num">04</span>去看看世界</a>
+    <a href="#now"><span class="drawer-num">05</span>此刻与以后</a>
+    <a href="#contact"><span class="drawer-num">06</span>有缘相逢</a>
+  </div>
+
+  <main>
+
+    <!-- ============ HOME 首屏 ============ -->
+    <section class="hero" id="home">
+      <div class="glow-orb g1" style="width:36vw;height:36vw;min-width:260px;min-height:260px;right:8%;top:18%"></div>
+      <div class="glow-orb g2" style="width:25vw;height:25vw;min-width:200px;min-height:200px;left:5%;bottom:8%"></div>
+
+      <div class="hero-corner">WU CHUAN · PERSONAL JOURNAL</div>
+
+      <div class="hero-left">
+        <h1 class="hero-title">
+          <span class="l1">且将新火试新茶<span class="dot">，</span></span>
+          <span class="l2">诗酒趁年华<span class="dot">。</span></span>
+        </h1>
+        <p class="hero-sub">
+          <span class="en-italic">a personal journal of curiosity, making &amp; wandering</span>
+          这里不是一个标签清单，更像一本随手翻开的手记——记录我怎么认识世界、把好奇变成行动，以及期待与怎样的人同行。
+        </p>
+
+        <nav class="hero-gates" aria-label="探索入口">
+          <a class="gate" href="#works"><span class="gate-num">01</span>🛠️ 把想法做出来</a>
+          <a class="gate" href="#places"><span class="gate-num">02</span>🧭 去看看世界</a>
+          <a class="gate" href="#me"><span class="gate-num">03</span>🌱 认识一下我</a>
+        </nav>
+      </div>
+
+      <div class="hero-right" aria-hidden="true">
+        <div class="hero-art" data-parallax="0.15">
+          <img class="hero-art-img" src="images/hero-art.jpg" alt="远山、湖面与小舟的手绘风景" />
+          <span class="hero-stamp">遠<br>方</span>
+          <span class="hero-tape"></span>
+          <span class="grain"></span>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span class="en-italic">— the note on the cover —</span>
+        我想亲自看看世界，也想亲手参与世界。
+        <a class="hero-scroll" href="#me" aria-label="向下探索">
+          <svg width="18" height="30" viewBox="0 0 18 30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 2 v22"/>
+            <path d="M3 19 l6 7 l6 -7"/>
+          </svg>
+          <span class="hero-scroll-word">翻开下一页</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 跨屏照片带 -->
+    <div class="fullbleed" aria-hidden="true">
+      <span class="grain"></span>
+      <div class="fb-caption">好奇心，是一切的起点。</div>
+    </div>
+
+    <!-- ============ ME 认识自己 ============ -->
+    <section class="section" id="me">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow"><span class="section-num">01</span>About Me</span>
+          <h2 class="section-title">从这里出发，慢慢认识自己</h2>
+          <p class="section-intro">不急着把自己说成某一种人。先从一些真实的片段开始。</p>
+        </div>
+
+        <div class="bio">
+          <div class="bio-text reveal">
+            <p class="bio-lead">我是武川。比起过早确定答案，我更想保留一点好奇心，继续去看、去做、去认识不同的人。</p>
+            <p>更多时候，我是一个<span class="em">仍在路上的人</span>——有时会花时间研究一个新工具，有时突然想做一个产品，有时又会被历史、城市、人与人的故事吸引。</p>
+            <p>我喜欢把看起来不太相关的东西连接起来。也愿意花时间理解一个问题，再想办法把它变成某种<span class="em">看得见、摸得着</span>的东西。</p>
+            <p>我也珍惜人与人之间真诚的连接。喜欢坦诚表达，也享受和一群人一起把一件事做成的过程。比起过早把自己定义成某一种人，我更愿意保留一点好奇心，继续去看、去做、去认识不同的人。</p>
+            <div class="hand-note" style="position:relative;margin-top:1.6rem;transform:rotate(-2deg)">有时候，答案不在书里，<br>在亲手试一试的路上。 ✎</div>
+          </div>
+
+          <div class="bio-keywords reveal">
+            <img class="bio-art" src="images/me-art.jpg" alt="书桌上的笔记本、茶杯与手账小物" />
+            <div class="bio-kw">
+              <span class="kw-emoji">🔍</span>
+              <span class="kw-en">curiosity</span>
+              好奇心<br>总想知道事情为什么如此。
+            </div>
+            <div class="bio-kw">
+              <span class="kw-emoji">🛠️</span>
+              <span class="kw-en">making</span>
+              创造欲<br>一个念头，最好能变成真实的东西。
+            </div>
+            <div class="bio-kw">
+              <span class="kw-emoji">🤝</span>
+              <span class="kw-en">people</span>
+              人与人<br>喜欢真诚交流，也享受一起完成事情。
+            </div>
+            <div class="bio-kw">
+              <span class="kw-emoji">🧳</span>
+              <span class="kw-en">wandering</span>
+              远方<br>去不同的地方，看看世界的不同样子。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="fullbleed" aria-hidden="true">
+      <span class="grain"></span>
+      <div class="fb-caption">把一个念头，慢慢做成形状。</div>
+    </div>
+
+    <!-- ============ WORKS 作品 ============ -->
+    <section class="section section-alt" id="works">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow"><span class="section-num">02</span>Selected Works</span>
+          <h2 class="section-title">把一个念头，慢慢做成形状</h2>
+          <p class="section-intro">像一本设计年鉴，几件作品大小错落地陈列。看见哪一件有意思，就推门走进去看看。</p>
+        </div>
+
+        <div class="yearbook" id="gallery"><!-- 由 render.js 填充 --></div>
+      </div>
+    </section>
+
+    <!-- ============ PRACTICE 实习实践 ============ -->
+    <section class="section" id="practice">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow"><span class="section-num">03</span>Practice</span>
+          <h2 class="section-title">与人同行，也在事情里长出方法</h2>
+          <p class="section-intro">有些能力不是坐下来想明白的，是在一次次真实任务里，边做边调整，慢慢长出来的。点开任何一条，看看它背后的故事。</p>
+        </div>
+        <div class="practice-layout">
+          <div class="practice-list" id="practice-list"><!-- 由 render.js 填充 --></div>
+          <aside class="practice-aside reveal" aria-label="做事锦囊抽签">
+            <span class="aside-tape" aria-hidden="true"></span>
+            <div class="fortune-box">
+              <div class="fortune-top">
+                <span class="fortune-en">HOW I WORK</span>
+                <span class="fortune-emoji" aria-hidden="true">🃏</span>
+              </div>
+              <h3 class="fortune-title">做事锦囊</h3>
+              <p class="fortune-sub">抽一张，看看我在一次次真实任务里攒下的小原则。</p>
+              <div class="fortune-card" id="fortune-card">
+                <span class="fortune-mark" aria-hidden="true">✦</span>
+                <p class="fortune-text" id="fortune-text">点下面的按钮，抽一张</p>
+              </div>
+              <button class="fortune-btn" id="fortune-btn" type="button">抽一张 ↗</button>
+              <p class="fortune-count" id="fortune-count">这台设备上，你已抽 0 次</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <div class="fullbleed" aria-hidden="true">
+      <span class="grain"></span>
+      <div class="fb-caption">走过一些地方，也收集一些瞬间。</div>
+    </div>
+
+    <!-- ============ PLACES 旅行 ============ -->
+    <section class="section section-alt" id="places">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow"><span class="section-num">04</span>Places</span>
+          <h2 class="section-title">走过一些地方，也收集一些瞬间</h2>
+          <p class="section-intro">一条路，串起几座城市。每一站，都留了一点光和当时的心情。</p>
+        </div>
+
+        <div class="travel-journal">
+          <div class="route-controls">
+            <span class="route-hint">← 沿着这条路，一站一站往前走 →</span>
+            <span class="route-arrows">
+              <button class="route-arrow" id="route-prev" aria-label="上一站">‹</button>
+              <button class="route-arrow" id="route-next" aria-label="下一站">›</button>
+            </span>
+          </div>
+          <div class="route-scroller" id="route-scroller">
+            <div id="journal-entries"><!-- 由 gallery.js 填充 --></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOW 此刻 ============ -->
+    <section class="section" id="now">
+      <div class="container">
+        <div class="now-panel reveal">
+          <img class="now-art" src="images/now-art.jpg" alt="" aria-hidden="true" />
+          <span class="now-tape" aria-hidden="true"></span>
+          <span class="now-sticker" aria-hidden="true">此刻<em>NOW</em></span>
+
+          <div class="now-panel-head">
+            <span class="section-eyebrow"><span class="section-num">05</span>Now</span>
+            <h2 class="section-title">日子向前，兴致未减</h2>
+          </div>
+
+          <blockquote>
+            我想让生活里一直有新的东西发生。<br>
+            去没去过的地方，认识不一样的人，<br>
+            也把脑海里那些奇怪又有趣的念头，试着做出来。
+          </blockquote>
+          <p>最近仍然在读、在看、在尝试。关于未来，还不想太早写成一个确定的句子。先把眼前的日子过好，也给下一次出发留一点空白。</p>
+          <span class="hand-note now-note">写给自己：<br>别急着下结论，先出发。 ✎</span>
+
+          <div class="now-list-head">
+            <span class="now-list-label">最近的碎片 <em>LATELY</em></span>
+            <span class="now-list-rule"></span>
+            <span class="now-list-caption">一些正在发生的小事</span>
+          </div>
+          <div class="now-list">
+            <div class="now-item">
+              <span class="now-icon">📖</span>
+              <span class="now-label">最近在读</span>
+              <span class="now-value">《万历十五年》</span>
+            </div>
+            <div class="now-item">
+              <span class="now-icon">🎬</span>
+              <span class="now-label">最近在看</span>
+              <span class="now-value">《八仙》</span>
+            </div>
+            <div class="now-item">
+              <span class="now-icon">✎</span>
+              <span class="now-label">最近记下的一句话</span>
+              <span class="now-value">成功只有一个——按照自己的方式，去度过人生</span>
+            </div>
+            <div class="now-item">
+              <span class="now-icon">🧭</span>
+              <span class="now-label">下一次想去的地方</span>
+              <span class="now-value">厦门</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT 联系 ============ -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="section-head reveal" style="text-align:center;margin-left:auto;margin-right:auto">
+          <span class="section-eyebrow"><span class="section-num">06</span>Say Hello</span>
+          <h2 class="section-title">若有同路，欢迎相逢</h2>
+        </div>
+
+        <div class="contact-wrap reveal">
+          <div class="contact-copy">
+            <p class="contact-lead">
+              如果你也在做一些有意思的事情，<br>
+              或者刚好有一个想法，想找人一起试试，<br>
+              可以从 AI 与创造、历史与人性、科技与金融、<br>
+              旅行与城市，或生活里那些没试过的新鲜事聊起。
+            </p>
+            <div class="contact-sign">— 愿我既能抵达远方，也能参与其中 —</div>
+
+            <!-- 相逢盖章：戳一下，留个纪念（localStorage 计数） -->
+            <div class="stamp-game" id="stamp-game">
+              <button class="stamp-seal-btn" id="stamp-seal-btn" type="button" aria-label="盖一枚相逢纪念章">
+                <span class="stamp-seal-ring">相逢</span>
+              </button>
+              <div class="stamp-game-copy">
+                <span class="stamp-game-kicker">A LITTLE SOUVENIR · 到此一游</span>
+                <p class="stamp-game-title">读到这里，盖个章吧</p>
+                <p class="stamp-game-note" id="stamp-note">轻轻点一下那枚章，留个来过的印。</p>
+                <p class="stamp-game-count">已盖 <strong id="stamp-count">0</strong> 次 · <span id="stamp-level">初来乍到</span></p>
+              </div>
+              <!-- 纸飞机彩蛋：盖到一定次数会飞过 -->
+              <svg class="contact-plane" viewBox="0 0 90 60" aria-hidden="true">
+                <path d="M4 34 L84 8 L58 52 L46 36 Z" fill="rgba(184,120,89,0.18)" stroke="var(--accent)" stroke-width="1.4" stroke-linejoin="round"/>
+                <path d="M46 36 L84 8 L52 40 Z" fill="rgba(184,120,89,0.28)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="qr-card">
+            <span class="qr-tape" aria-hidden="true"></span>
+            <img class="qr-art" src="images/wechat-qr.jpg" alt="微信二维码，扫码添加云书" />
+            <span class="qr-label">微信 · 扫码聊聊</span>
+            <span class="qr-en">WeChat</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-title">且将新火试新茶，诗酒趁年华。</p>
+      <p>WU CHUAN · PERSONAL JOURNAL</p>
+      <p style="margin-top:0.5em">© <span id="year"></span> 武川 · 用心去看见，用手去参与</p>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="回到顶部">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- 数据 -->
+  <script src="data/projects.js"></script>
+  <script src="data/practice.js"></script>
+  <script src="data/travel.js"></script>
+  <!-- 逻辑 -->
+  <script src="js/main.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/eggs.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

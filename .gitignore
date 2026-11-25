@@ -1,0 +1,4 @@
+.workbuddy/
+.wbapp_*.genie
+.DS_Store
+node_modules/

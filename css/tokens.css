@@ -1,0 +1,97 @@
+/* ============================================
+   设计 Token — 且将新火试新茶，诗酒趁年华 V6
+   视觉基准：暖白纸 + 杏褐 + 雾面莫兰迪（对齐 preview 参考）
+   柔和、朦胧、克制的杂志编辑感，无黄绿/高饱和色
+   ============================================ */
+
+:root {
+  /* --- 纸与墨 --- */
+  --paper:        #F7F6F2;  /* 暖白纸 · 主背景 */
+  --paper-deep:   #EFEDE7;  /* 纸页深处 · 次背景 */
+  --ink:          #303332;  /* 深墨 · 主文字（柔和近黑） */
+  --ink-soft:     #666E69;  /* 次文字 */
+  --ink-faint:    #8A918B;  /* 弱文字 */
+  --line:         rgba(48, 51, 50, 0.14);
+  --line-soft:    rgba(48, 51, 50, 0.08);
+
+  /* --- 点缀色（杏褐，全站唯一强调） --- */
+  --accent:       #B87859;  /* 杏褐 · 强调/序号/斜体英文 */
+  --accent-soft:  #C89A7E;  /* 浅杏 */
+
+  /* --- 雾面氛围色块（低饱和莫兰迪，柔和朦胧） --- */
+  --mist-blue:    #DCEAF0;  /* 雾面蓝 */
+  --mist-lilac:   #E8E2F0;  /* 丁香紫 */
+  --mist-sage:    #E1E9DF;  /* 鼠尾草绿 */
+  --mist-peach:   #F1E2D5;  /* 蜜桃 */
+  --mist-rose:    #EFE6E4;  /* 浅玫瑰 */
+  --mist-mint:    #E4EDE8;  /* 薄荷 */
+
+  /* --- 做旧胶片/图片占位色（低饱和大地色，柔和） --- */
+  --film-1: #DCE8E8;  /* 雾蓝灰 */
+  --film-2: #E9E2EE;  /* 雾紫 */
+  --film-3: #F1E2D5;  /* 蜜桃 */
+  --film-4: #D9E5DF;  /* 灰绿 */
+  --film-5: #F0EAE2;  /* 米白 */
+
+  /* --- 字体 --- */
+  --font-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC",
+               "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  --font-latin: "Cormorant Garamond", "Georgia", serif;
+
+  /* --- 字号（杂志编辑层次，克制不夸张） --- */
+  --text-display:     clamp(2.3rem, 5.5vw, 4rem);
+  --text-hero:        clamp(2rem, 4.5vw, 3.4rem);
+  --text-section:     clamp(1.6rem, 3.2vw, 2.4rem);
+  --text-sub:         clamp(0.95rem, 1.4vw, 1.1rem);
+  --text-card:        clamp(1.05rem, 1.6vw, 1.25rem);
+  --text-body:        clamp(0.92rem, 1.15vw, 1rem);
+  --text-small:       0.85rem;
+  --text-tiny:        0.72rem;
+
+  /* --- 间距 --- */
+  --space-xs: 0.5rem;
+  --space-sm: 0.9rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.6rem;
+  --space-xl: 4.5rem;
+  --space-2xl: 6.5rem;
+  --space-3xl: 9rem;
+
+  /* --- 布局 --- */
+  --max-width: 1180px;
+  --reading-width: 660px;
+  --header-h: 60px;   /* 顶部固定导航条高度（锚点偏移与内容避让统一） */
+
+  /* --- 圆角 --- */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-pill: 999px;
+
+  /* --- 阴影（柔和纸感） --- */
+  --shadow-soft: 0 2px 12px rgba(67, 70, 65, 0.05);
+  --shadow-lift: 0 18px 50px rgba(62, 69, 65, 0.10);
+
+  /* --- 动效 --- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 0.3s;
+  --duration-normal: 0.6s;
+  --duration-slow: 1s;
+  --duration-drift: 22s;
+
+  /* --- 层级 --- */
+  --z-header: 100;
+  --z-overlay: 150;
+  --z-lightbox: 200;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
